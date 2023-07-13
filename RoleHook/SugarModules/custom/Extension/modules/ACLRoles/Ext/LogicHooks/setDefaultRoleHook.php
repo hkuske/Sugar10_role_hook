@@ -11,8 +11,8 @@ if (!isset($hook_array['after_save'])) {
 
 $hook_array['after_save'][] = array(
     200,
-    'after User was saved',
-    'custom/modules/Users/setDefaultRole.php',
+    'after Role was saved',
+    'custom/modules/ACLRoles/setDefaultRole.php',
     'setDefaultRole',
     'setRole'
 );
